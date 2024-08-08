@@ -1,0 +1,103 @@
+---
+title: 기본 데이터 타입
+page: data-types
+---
+
+# 기본 데이터 타입
+
+하스켈에서 기본 데이터 타입은 매우 중요합니다. 하스켈은 강타입 언어로, 모든 값에는 명확한 타입이 있습니다. \
+여기서는 하스켈에서 자주 사용되는 몇 가지 기본 데이터 타입에 대해 알아보겠습니다.
+
+## 정수 (Integer, Int)
+
+하스켈에는 두 가지 주요 정수 타입이 있습니다: `Int`와 `Integer`입니다.
+
+- `Int`: 고정 크기 정수, 32비트 또는 64비트 정수 (플랫폼에 따라 다름).
+- `Integer`: 가변 크기 정수, 크기에 제한이 없음.
+
+```haskell
+-- Int 예제
+myInt :: Int
+myInt = 42
+
+-- Integer 예제
+myInteger :: Integer
+myInteger = 12345678901234567890
+```
+
+## 부동 소수점 (Float, Double)
+
+하스켈에서는 두 가지 주요 부동 소수점 타입을 제공합니다: `Float`와 `Double`입니다.
+
+- `Float`: 단정밀도 부동 소수점 숫자 (32비트).
+- `Double`: 배정밀도 부동 소수점 숫자 (64비트).
+
+```haskell
+-- Float 예제
+myFloat :: Float
+myFloat = 3.14
+
+-- Double 예제
+myDouble :: Double
+myDouble = 3.141592653589793
+```
+
+## 불리언 (Bool)
+
+`Bool` 타입은 참 (`True`) 또는 거짓 (`False`) 값을 가질 수 있습니다.
+
+```haskell
+-- Bool 예제
+myBool :: Bool
+myBool = True
+```
+
+## 문자 (Char)
+
+`Char` 타입은 단일 문자를 나타냅니다. 하스켈에서는 유니코드 문자를 지원합니다.
+
+```haskell
+-- Char 예제
+myChar :: Char
+myChar = 'A'
+```
+
+## 문자열 (String)
+
+`String` 타입은 문자들의 리스트로 표현됩니다. 기본적으로 `[Char]` 타입과 동일합니다.
+
+```haskell
+-- String 예제
+myString :: String
+myString = "Hello, Haskell!"
+```
+
+## 튜플 (Tuple)
+
+튜플은 여러 개의 값을 하나로 묶는 자료 구조입니다. 서로 다른 타입의 값을 가질 수 있습니다.
+
+```haskell
+-- Tuple 예제
+myTuple :: (Int, String, Bool)
+myTuple = (1, "Haskell", True)
+```
+
+## 리스트 (List)
+
+리스트는 같은 타입의 값들을 순서대로 모아놓은 자료 구조입니다.
+
+```haskell
+-- List 예제
+myList :: [Int]
+myList = [1, 2, 3, 4, 5]
+```
+
+리스트 컴프리헨션을 사용하여 리스트를 생성할 수도 있습니다.
+
+```haskell
+-- List comprehension 예제
+squares :: [Int]
+squares = [x * x | x <- [1..10]]
+```
+
+이제 하스켈에서 사용되는 주요 기본 데이터 타입에 대해 살펴보았습니다. 다음 섹션에서는 변수와 함수에 대해 알아보겠습니다.
