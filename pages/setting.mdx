@@ -3,8 +3,6 @@ title: 하스켈 설치하기
 page: setting
 ---
 
-import { Tabs } from "nextra/components";
-
 # 하스켈 설치하기
 
 좋습니다! 전 장에서 간단하게 하스켈을 살펴보았으니, 이제 하스켈 실습 환경을 구축해봅시다!
@@ -27,10 +25,16 @@ import { Tabs } from "nextra/components";
 각 플랫폼별로 명령어를 실행하세요.
 
 윈도우는 다음의 명령어를 실행하세요.
-`Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { & ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -Interactive -DisableCurl } catch { Write-Error $_ }{:ps1}`
+
+```ps1
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { & ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -Interactive -DisableCurl } catch { Write-Error $_ }
+```
 
 리눅스, 맥을 사용하고 있다면 다음의 명령어를 실행하세요.
-`curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh{:bash}`
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+```
 
 ## GHCi 실행해보기
 
