@@ -1,15 +1,6 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
-  }
+  "index": "시작하기",
+  "what-is-haskell": "하스켈이란?",
+  "setting": "하스켈 설치하기",
+  "basics": "하스켈 기본 문법"
 }
